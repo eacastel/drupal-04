@@ -1,0 +1,7 @@
+name: 'AI Bootstrap'
+type: theme
+description: 'Subtheme of Bootstrap 3'
+base theme: bootstrap
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom
+version: 1.0
