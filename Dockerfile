@@ -18,8 +18,14 @@ WORKDIR /opt/drupal/web
 # Install Drush
 RUN composer global require drush/drush
 
+# Install Node.js and npm
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
+  && apt-get install -y nodejs
+
+
 # Add Drush to the system PATH
 ENV PATH="${PATH}:/root/.composer/vendor/bin"
+
 
 # Install packages and remove lists
 RUN apt-get update && apt-get install -y \

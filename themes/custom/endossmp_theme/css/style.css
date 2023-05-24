@@ -1,0 +1,44 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+
+ @font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('../fonts/CooperHewitt/CooperHewitt-Medium.woff') format('woff'),
+       url('../fonts/CooperHewitt/CooperHewitt-Medium.svg') format('svg'),
+       url('../fonts/CooperHewitt/CooperHewitt-Medium.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    background-color: #080808;
+    color: white;
+    line-height: 2.5;
+  }
+
+h1 {
+    font-family: 'Cooper Hewitt', sans-serif;
+  }
+  
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+h1, h2, h3, h4, h5, h6, p, a {
+    color: white;
+  }
+
+.navbar-nav {
+  float:right;
+}
+
+.slide--0 { 
+  .slide__caption {
+  font-size:x-large;
+  text-transform: uppercase;
+  font-weight: bold;
+  }
+}
+
