@@ -25,6 +25,7 @@ services:
       - ./profiles:/opt/drupal/web/profiles
       - ./themes:/opt/drupal/web/themes
       - ./sites:/opt/drupal/web/sites
+      - ./libraries:/opt/drupal/web/libraries
       - ./sites/default/files:/opt/drupal/web/sites/default/files
     environment:
       DRUPAL_DATABASE: ${DB_NAME}

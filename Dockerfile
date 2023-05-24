@@ -15,6 +15,12 @@ ENV PATH="/root/.composer/vendor/bin:${PATH}"
 # Set the working directory
 WORKDIR /opt/drupal/web
 
+# Install Drush
+RUN composer global require drush/drush
+
+# Add Drush to the system PATH
+ENV PATH="${PATH}:/root/.composer/vendor/bin"
+
 # Install packages and remove lists
 RUN apt-get update && apt-get install -y \
     git \
