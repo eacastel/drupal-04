@@ -1,8 +1,26 @@
 <?php
 
+use Drupal\Core\Form\FormStateInterface;
+
 /**
- * @file
- * Bootstrap sub-theme.
- *
- * Place your custom PHP code in this file.
+ * Implements hook_form_system_theme_settings_alter().
  */
+function endossmp_theme_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  // Add custom theme settings here if needed.
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page title templates.
+ */
+function endossmp_theme_preprocess_page_title(&$variables) {
+  // The current route can be a node entity.
+  $node = \Drupal::routeMatch()->getParameter('node');
+  // Check if we have a node.
+  if ($node instanceof \Drupal\node\NodeInterface) {
+    // Check if the node has a 'field_page_byline' field.
+    if ($node->hasField('field_page_byline') && !$node->get('field_page_byline')->isEmpty()) {
+      // If so, add the field value to the variables array.
+      $variables['byline'] = $node->get('field_page_byline')->value;
+    }
+  }
+}

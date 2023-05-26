@@ -22,3 +22,4 @@ regions:
 libraries-extend:
   bootstrap/framework:
     - endossmp_theme/framework
+    - endossmp_theme/custom-scripts
