@@ -1,0 +1,29 @@
+{{ attach_library('endossmp_theme/slick') }}
+
+<div class="hero-slider">
+  <div class="slick-carousel">
+    <div><img src="/sites/default/files/2023-05/educational-minecraft-server.png" alt="Slide 1"></div>
+    <div><img src="/sites/default/files/2023-05/child-friendly-minecraft-server_0.png" alt="Slide 2"></div>
+    <div><img src="/sites/default/files/2023-05/endos-smp-where-minecraft-meets-safe.png" alt="Slide 3"></div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    jQuery('.slick-carousel').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 5000, // Adjust the duration (in milliseconds) between slide transitions
+      dots: true, // Add navigation dots
+      responsive: [
+        {
+          breakpoint: 768, // Adjust the breakpoint value as per your needs
+          settings: {
+            arrows: false, // Hide arrows on smaller screens
+          }
+        }
+      ]
+    });
+  });
+</script>
