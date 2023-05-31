@@ -1,0 +1,76 @@
+/*-- Homepage Paragraphs --*/
+
+$dark-gray: rgba(34, 34, 34, 0.8);
+$light-gray: rgba(44, 44, 44, 0.8);
+$section-padding: 10px;
+
+.main-container {
+   // background-color: $dark-gray;
+    border-radius: 15px;
+    //padding: $section-padding * 2;
+}
+
+.region-content {
+    //transition: all 0.5s ease;
+
+    &:hover {
+        //transform: scale(1.05);
+    }
+}
+
+.title.page-title {
+    color: #0f0;
+    text-shadow: 2px 2px #000;
+}
+
+.byline {
+    color: #0ff;
+    text-shadow: 1px 1px #000;
+}
+
+.field--name-field-page-byline {
+    //display: none;
+}
+
+.article {
+    background-image: url('path-to-your-cool-background-image.jpg');
+    background-size: cover;
+    border: 2px solid #444;
+    transition: all 0.5s ease;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.field--name-body p {
+    color: #eee;
+}
+
+.field--name-field-about-section {
+    background-color: rgba(0, 255, 0, 0.1);
+    border-radius: 10px;
+    padding: $section-padding;
+}
+
+.field--name-field-features-section, .field--name-field-testimonials {
+    background-color: $light-gray;
+    border-radius: 10px;
+    padding: $section-padding;
+
+    @media (min-width: 1200px) {
+        float: left;
+        width: 48%;
+        margin-right: 2%;
+        
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+}
+
+.field--name-field-join-us- {
+    background-color: rgba(255, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: $section-padding;
+}
