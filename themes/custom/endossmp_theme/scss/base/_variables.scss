@@ -4,6 +4,7 @@ $base-line-height: 1.5;
 $base-font-family: 'Montserrat', sans-serif;
 $base-color: #e8e8e8;
 $base-background-color: #080808;
-
-$medium-screen: 768px;
-$large-screen: 1024px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

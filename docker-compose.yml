@@ -3,7 +3,7 @@ services:
   db:
     image: mysql:8.0
     volumes:
-      - ./db_data_03:/var/lib/mysql
+      - ./db_data_04:/var/lib/mysql
     restart: always
     environment:
       MYSQL_DATABASE: ${DB_NAME}
@@ -14,9 +14,9 @@ services:
     depends_on:
       - db
     build: .
-    image: ai03_drupal:1.0
+    image: ai04_drupal:1.0
     ports:
-      - "8083:80"
+      - "8085:80"
     restart: always
     volumes:
       - ./composer.json:/opt/drupal/composer.json

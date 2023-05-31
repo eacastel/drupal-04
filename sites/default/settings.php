@@ -814,9 +814,9 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'dg_db1',
-  'username' => 'dg_user1',
-  'password' => '8dffaEeod0%433',
+  'database' => 'dg_db04',
+  'username' => 'dg_user04',
+  'password' => '8dffa54qod0%423',
   'prefix' => '',
   'host' => 'db',
   'port' => '3306',

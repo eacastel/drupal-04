@@ -23,8 +23,24 @@ $navbar-mobile-overlay: rgba(0, 0, 0, 0.8);
   }
 }
 
+  /* Accomodates menu to not cover content */
+  .region.region-header {
+    padding-bottom: 13px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: none;
+}
+
+.navbar .logo {
+  padding-left: 10px;
+}
+
 .navbar-nav {
   margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
 
   @media (max-width: 767px) {
     display: flex;
@@ -66,7 +82,7 @@ nav#block-endossmp-theme-main-menu {
 
   li {
     a {
-      font-size: 1.2em;
+      font-size: 1.8rem;
       font-weight: bold;
       color: $navbar-link-color;
 
@@ -169,3 +185,57 @@ body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar-fixed-top {
   top: 80px;
   height: 80px;
 }
+
+/* Join Now button on mobile */
+.navbar-btn.join-now {
+  display: none;
+}
+
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    //position: relative;
+  }
+
+  .navbar-btn {
+    padding-left: 45px;
+  }
+
+  .navbar-btn.join-now {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    margin: 0px;
+    width: 49px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 2px 4px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid white;
+  }
+
+  .navbar-btn.join-now {
+    a {
+      color: #fff;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  .navbar-btn.join-now:hover {
+    background-color: #0056b3;
+  }
+
+  .navbar-toggle {
+    float: left;
+    display:block;
+    margin-right: 70px;
+  }
+}
+
+
