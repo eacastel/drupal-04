@@ -87,7 +87,7 @@ mark {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
 }
 @media (min-width: 768px) {
@@ -98,8 +98,8 @@ p {
 }
 @media (min-width: 992px) {
   p {
-    font-size: 20px;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 1.6;
   }
 }
 
@@ -149,22 +149,22 @@ h6 {
 }
 @media (min-width: 992px) {
   h1 {
-    font-size: 3em;
+    font-size: 2.75em;
   }
   h2 {
-    font-size: 2.4em;
+    font-size: 2.2em;
   }
   h3 {
-    font-size: 2.1em;
+    font-size: 1.925em;
   }
   h4 {
-    font-size: 1.8em;
+    font-size: 1.65em;
   }
   h5 {
-    font-size: 1.5em;
+    font-size: 1.375em;
   }
   h6 {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 p {
@@ -256,11 +256,11 @@ h2.byline {
 }
 
 .slide__caption .slide__description {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
 @media (min-width: 768px) {
   .slide__caption .slide__description {
-    font-size: 1.4rem;
+    font-size: 2.4rem;
   }
 }
 @media (min-width: 992px) {
@@ -299,7 +299,7 @@ h2.byline {
   width: 100%;
   z-index: 2;
   position: relative;
-  color: white;
+  color: #dbdbdb;
 }
 .slide__link {
   display: inline-block;
@@ -309,7 +309,7 @@ h2.byline {
   display: inline-block;
   padding: 10px 20px;
   background-color: #007bff;
-  color: #fff;
+  color: #dbdbdb;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
@@ -390,46 +390,47 @@ section#block-views-block-endos-sliders-block-1 {
     display: none;
   }
 }
+.slide--caption--bottom .slide__constrained > .slide__caption {
+  background: radial-gradient(black, transparent);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 /*-- Homepage Paragraphs --*/
-.main-container {
-  border-radius: 15px;
-}
-
-.title.page-title {
-  color: #0f0;
-  text-shadow: 2px 2px #000;
-}
-
-.byline {
-  color: #0ff;
-  text-shadow: 1px 1px #000;
-}
-
-.article {
-  background-image: url("path-to-your-cool-background-image.jpg");
+.headline-row {
+  background-image: url(/sites/default/files/2023-06/one-block-minecraft-build.png);
   background-size: cover;
-  border: 2px solid #444;
-  transition: all 0.5s ease;
-}
-.article:hover {
-  transform: scale(1.02);
 }
 
-.field--name-body p {
-  color: #eee;
+h1.title.page-title {
+  text-transform: uppercase;
+  font-weight: 200;
+  padding: 40px 0;
+  line-height: 1.3em;
 }
 
-.field--name-field-about-section {
-  background-color: rgba(0, 255, 0, 0.1);
-  border-radius: 10px;
-  padding: 10px;
+h2.byline {
+  margin-top: -23px;
+  padding-bottom: 30px;
+  font-weight: 300;
+  font-size: 24px;
 }
 
-.field--name-field-features-section, .field--name-field-testimonials {
-  background-color: rgba(44, 44, 44, 0.8);
-  border-radius: 10px;
-  padding: 10px;
+h2.field--name-field-join-us-title, h2.field--name-field-feature-title, h2.field--name-field-testimonial-title, h2.field--name-field-about-us-title {
+  padding: 60px 0 0px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.3em;
+  clear: both;
 }
+
+.field--name-field-feature-description ul {
+  list-style-type: disc;
+}
+.field--name-field-feature-description ul li {
+  padding: 0 0 26px 6px;
+  line-height: 1.5em;
+}
+
 @media (min-width: 1200px) {
   .field--name-field-features-section, .field--name-field-testimonials {
     float: left;
@@ -439,12 +440,6 @@ section#block-views-block-endos-sliders-block-1 {
   .field--name-field-features-section:nth-child(2n), .field--name-field-testimonials:nth-child(2n) {
     margin-right: 0;
   }
-}
-
-.field--name-field-join-us- {
-  background-color: rgba(255, 0, 0, 0.1);
-  border-radius: 10px;
-  padding: 10px;
 }
 
 /*-- IP Button Text --*/
