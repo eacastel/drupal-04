@@ -68,7 +68,7 @@ body {
   font-size: initial;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
-  background-color: #080808;
+  background-color: #252525;
   color: #e8e8e8;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -269,6 +269,84 @@ h2.byline {
   }
 }
 
+.node-8 .field--name-body p,
+.node-8 .field--name-body li {
+  font-size: 16px;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  .node-8 .field--name-body p,
+  .node-8 .field--name-body li {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+@media (min-width: 992px) {
+  .node-8 .field--name-body p,
+  .node-8 .field--name-body li {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+.node-8 .field--name-body ul {
+  list-style-type: circle;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.node-8 .field--name-body ol {
+  list-style-type: decimal;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.node-8 .field--name-body li {
+  margin-left: 5px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  line-height: 1.5em;
+}
+
+.field--name-field-page-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.endos-image {
+  min-width: 100px; /* Change as needed */
+  height: auto;
+  padding-right: 5px;
+}
+
+/* Faq Endos */
+.faq-endos {
+  padding: 40px;
+  border: 2px solid #8a6d3b;
+  background: #080808;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.icon-endos {
+  display: flex;
+  align-items: center;
+}
+
+.icon-endos .col-lg-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-endos .col-lg-1 i {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; /* Adjust the margin as desired */
+}
+
+@media (max-width: 767px) {
+  .icon-endos .col-lg-1 {
+    padding: 10px; /* Adjust the padding as desired */
+  }
+}
 /*-- Hero Slider --*/
 .slick__slider {
   margin: 0 auto;
@@ -308,7 +386,7 @@ h2.byline {
 .slide__link a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #9d1e11;
   color: #dbdbdb;
   text-decoration: none;
   font-weight: bold;
@@ -316,11 +394,11 @@ h2.byline {
   transition: transform 0.3s ease;
 }
 .slide__link a:hover {
-  background-color: #0056b3;
+  background-color: #c94536;
   transform: translateY(-3px);
 }
 .slide__link a:active {
-  background-color: #003080;
+  background-color: rgb(233, 171, 37);
   transform: translateY(1px);
 }
 .slide__content {
@@ -350,14 +428,13 @@ h2.byline {
 
 .slick--skin--fullwidth .slide__title {
   font-size: 220%;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
 }
 .slick--skin--fullwidth .slide__caption {
   font-size: initial;
 }
-
 section#block-views-block-endos-sliders-block-1 {
   margin-bottom: 2em;
 }
@@ -392,15 +469,10 @@ section#block-views-block-endos-sliders-block-1 {
 }
 .slide--caption--bottom .slide__constrained > .slide__caption {
   background: radial-gradient(black, transparent);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /*-- Homepage Paragraphs --*/
-.headline-row {
-  background-image: url(/sites/default/files/2023-06/one-block-minecraft-build.png);
-  background-size: cover;
-}
-
 h1.title.page-title {
   text-transform: uppercase;
   font-weight: 200;
@@ -409,22 +481,55 @@ h1.title.page-title {
 }
 
 h2.byline {
-  margin-top: -23px;
-  padding-bottom: 30px;
+  margin-top: -65px;
+  padding-bottom: 20px;
   font-weight: 300;
   font-size: 24px;
 }
 
 h2.field--name-field-join-us-title, h2.field--name-field-feature-title, h2.field--name-field-testimonial-title, h2.field--name-field-about-us-title {
-  padding: 60px 0 0px;
+  padding: 40px 0 0px;
   text-align: center;
   font-weight: 300;
   line-height: 1.3em;
   clear: both;
 }
 
+.paragraph.paragraph--type--about-section.paragraph--view-mode--default {
+  padding: 10px 70px 50px;
+  border: 2px solid #8a6d3b;
+  background: #080808;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.paragraph.paragraph--type--feature.paragraph--view-mode--default {
+  padding: 10px 70px 50px;
+  border: 2px solid #8a6d3b;
+  background: #080808;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.paragraph.paragraph--type--testimonials.paragraph--view-mode--default {
+  padding: 10px 70px 50px;
+  border: 2px solid #8a6d3b;
+  background: #080808;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1200px) {
+  .paragraph.paragraph--type--feature.paragraph--view-mode--default {
+    margin: 10px 20px 50px 0px;
+  }
+  .paragraph.paragraph--type--testimonials.paragraph--view-mode--default {
+    margin: 10px 0 50px 20px;
+  }
+}
 .field--name-field-feature-description ul {
   list-style-type: disc;
+  margin-left: 20px;
 }
 .field--name-field-feature-description ul li {
   padding: 0 0 26px 6px;
@@ -440,6 +545,12 @@ h2.field--name-field-join-us-title, h2.field--name-field-feature-title, h2.field
   .field--name-field-features-section:nth-child(2n), .field--name-field-testimonials:nth-child(2n) {
     margin-right: 0;
   }
+}
+
+.field--name-field-image-homepage img {
+  margin: 0 auto;
+  border-radius: 20px;
+  padding-bottom: 40px;
 }
 
 /*-- IP Button Text --*/
@@ -484,11 +595,6 @@ h2.field--name-field-join-us-title, h2.field--name-field-feature-title, h2.field
     background-color: #000;
     position: relative;
   }
-}
-
-/* Accomodates menu to not cover content */
-.region.region-header {
-  padding-bottom: 13px;
 }
 
 .navbar {
@@ -543,30 +649,59 @@ nav#block-endossmp-theme-main-menu ul.menu {
 nav#block-endossmp-theme-main-menu li a {
   font-size: 1.8rem;
   font-weight: bold;
+  text-decoration: none;
   color: #fff;
 }
-nav#block-endossmp-theme-main-menu li a:hover {
+nav#block-endossmp-theme-main-menu li a:hover, nav#block-endossmp-theme-main-menu li a:focus {
   display: inline-block;
   background-color: #d1d1d1;
   color: #000;
   border-radius: 5px;
-  font-weight: bold;
-  text-decoration: none;
 }
-nav#block-endossmp-theme-main-menu li a:focus {
-  background-color: transparent;
+nav#block-endossmp-theme-main-menu li:not(.last) a:hover {
+  background-color: white;
 }
-nav#block-endossmp-theme-main-menu li.last a {
+nav#block-endossmp-theme-main-menu li.last a, nav#block-endossmp-theme-main-menu li:last-child a {
   font-weight: bold;
   display: inline-block;
   background-color: #007bff;
   color: #fff;
   border-radius: 5px;
-  font-weight: bold;
+}
+nav#block-endossmp-theme-main-menu li.last a:hover, nav#block-endossmp-theme-main-menu li:last-child a:hover {
+  background-color: #d1d1d1;
+  color: #000;
+}
+nav#block-endossmp-theme-main-menu li.last .dropdown-menu > li > a:hover, nav#block-endossmp-theme-main-menu li:last-child .dropdown-menu > li > a:hover {
+  background-color: #d1d1d1;
+  color: #000;
+  border-radius: 5px;
+}
+nav#block-endossmp-theme-main-menu .expanded ul.dropdown-menu li.last a:hover {
+  background-color: white;
+  color: #000;
+  border-radius: 5px;
+}
+
+nav#block-endossmp-theme-main-menu .dropdown-menu {
+  background: black;
+  border: black;
+}
+nav#block-endossmp-theme-main-menu .dropdown-menu li.last a {
+  display: inline-block;
+  background-color: black;
+  color: #fff;
+  border-radius: 0;
   text-decoration: none;
 }
-nav#block-endossmp-theme-main-menu li.last a:hover {
-  background-color: #0056b3;
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: black;
+  outline: 0;
 }
 
 .navbar-btn {
@@ -669,6 +804,14 @@ body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar-fixed-top {
     display: block;
     margin-right: 70px;
   }
+}
+/* Option to open dropdown child on hover */
+.navbar-nav .dropdown .dropdown-menu a:hover {
+  background-color: #d1d1d1;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

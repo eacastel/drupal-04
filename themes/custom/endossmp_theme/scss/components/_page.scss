@@ -1,0 +1,53 @@
+.field--name-field-page-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        //border-radius: 20px;
+        //margin: 0 40px 40px;
+    }
+}
+
+.endos-image {
+  min-width: 100px; /* Change as needed */
+  height: auto;
+  padding-right:5px;
+}
+
+/* Faq Endos */
+
+.faq-endos {
+  padding: 40px;
+  border: 2px solid #8a6d3b;
+  background: #080808;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+
+  
+
+
+  .icon-endos {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-endos .col-lg-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon-endos .col-lg-1 i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; /* Adjust the margin as desired */
+  }
+  
+  @media (max-width: 767px) {
+    .icon-endos .col-lg-1 {
+      padding: 10px; /* Adjust the padding as desired */
+    }
+  }
+  

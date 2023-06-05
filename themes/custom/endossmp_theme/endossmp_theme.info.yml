@@ -19,7 +19,10 @@ regions:
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 
+libraries:
+  - endossmp_theme/fontawesome
+
 libraries-extend:
   bootstrap/framework:
-    - endossmp_theme/framework
     - endossmp_theme/ipblock
+    - endossmp_theme/dropdown
