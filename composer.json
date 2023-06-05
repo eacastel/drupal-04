@@ -43,7 +43,8 @@
         "drupal/xmlsitemap": "^1.4",
         "drush/drush": "^11.5",
         "webonyx/graphql-php": "^14.0",
-        "drupal/inline_entity_form": "^1.0@RC"
+        "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/commerce": "^2.36"
     },
     "conflict": {
         "drupal/drupal": "*"
