@@ -1,8 +1,8 @@
 /*-- Homepage Paragraphs --*/
 
 .headline-row {
-    background-image: url(/sites/default/files/2023-06/one-block-minecraft-build.png);
-    background-size: cover;
+    //background-image: url(/sites/default/files/2023-06/one-block-minecraft-build.png);
+    //background-size: cover;
 
 }
 h1.title.page-title {
@@ -13,22 +13,60 @@ h1.title.page-title {
 }
 
 h2.byline {
-    margin-top: -23px;
-    padding-bottom: 30px;
+    margin-top: -65px;
+    padding-bottom: 20px;
     font-weight: 300;
     font-size: 24px;
 }
 
 h2.field--name-field-join-us-title, h2.field--name-field-feature-title, h2.field--name-field-testimonial-title, h2.field--name-field-about-us-title {
-    padding: 60px 0 0px;
+    padding: 40px 0 0px;
     text-align: center;
     font-weight: 300;
     line-height: 1.3em;
     clear: both;
 }
 
+.paragraph.paragraph--type--about-section.paragraph--view-mode--default {
+    padding: 10px 70px 50px;
+    border: 2px solid #8a6d3b;
+    background: #080808;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+
+.paragraph.paragraph--type--feature.paragraph--view-mode--default {
+    padding: 10px 70px 50px;
+    border: 2px solid #8a6d3b;
+    background: #080808;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.paragraph.paragraph--type--testimonials.paragraph--view-mode--default {
+    padding: 10px 70px 50px;
+    border: 2px solid #8a6d3b;
+    background: #080808;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 1200px) {
+
+.paragraph.paragraph--type--feature.paragraph--view-mode--default {
+    margin: 10px 20px 50px 0px;
+}
+
+.paragraph.paragraph--type--testimonials.paragraph--view-mode--default {
+    margin: 10px 0 50px 20px;
+}
+
+}
+
 .field--name-field-feature-description ul {
     list-style-type: disc;
+    margin-left:20px;
     li {
         padding: 0 0 26px 6px;
         line-height: 1.5em;
@@ -46,3 +84,9 @@ h2.field--name-field-join-us-title, h2.field--name-field-feature-title, h2.field
         }
     }
 }
+
+.field--name-field-image-homepage img {
+    margin: 0 auto;
+    border-radius: 20px;
+    padding-bottom: 40px;
+  }

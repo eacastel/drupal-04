@@ -42,7 +42,8 @@
         "drupal/webform": "^6.2@beta",
         "drupal/xmlsitemap": "^1.4",
         "drush/drush": "^11.5",
-        "webonyx/graphql-php": "^14.0"
+        "webonyx/graphql-php": "^14.0",
+        "drupal/inline_entity_form": "^1.0@RC"
     },
     "conflict": {
         "drupal/drupal": "*"

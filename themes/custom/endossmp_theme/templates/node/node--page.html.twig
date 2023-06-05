@@ -1,6 +1,7 @@
 {{ attach_library('core/drupal.dialog.ajax') }}
 {%
   set classes = [
+	'node-' ~ node.id(),
     node.bundle|clean_class,
     node.isPromoted() ? 'is-promoted',
     node.isSticky() ? 'is-sticky',

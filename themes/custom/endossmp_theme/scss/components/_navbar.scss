@@ -1,6 +1,4 @@
 // _variables.scss
-
-// Add these new variables
 $navbar-background: #080808;
 $navbar-border-color: #080808;
 $navbar-link-color: #fff;
@@ -8,12 +6,11 @@ $navbar-link-hover-color: #000;
 $navbar-link-hover-bg: #d1d1d1;
 $navbar-active-border: 3px solid white;
 $navbar-last-link-bg: #007bff;
-$navbar-last-link-hover-bg: #0056b3;
+$navbar-last-link-hover-bg: white;
 $navbar-mobile-bg: #000;
 $navbar-mobile-overlay: rgba(0, 0, 0, 0.8);
 
 // components/_navbar.scss
-
 .navbar-header {
   padding-top: 10px;
 
@@ -21,11 +18,6 @@ $navbar-mobile-overlay: rgba(0, 0, 0, 0.8);
     background-color: $navbar-mobile-bg;
     position: relative;
   }
-}
-
-  /* Accomodates menu to not cover content */
-  .region.region-header {
-    padding-bottom: 13px;
 }
 
 .navbar {
@@ -84,37 +76,81 @@ nav#block-endossmp-theme-main-menu {
     a {
       font-size: 1.8rem;
       font-weight: bold;
+      text-decoration: none;
       color: $navbar-link-color;
 
-      &:hover {
+      &:hover,
+      &:focus {
         display: inline-block;
         background-color: $navbar-link-hover-bg;
         color: $navbar-link-hover-color;
         border-radius: 5px;
-        font-weight: bold;
-        text-decoration: none;
-      }
-
-      &:focus {
-        background-color: transparent;
       }
     }
 
-    &.last {
+    &:not(.last) {
+      a:hover {
+        background-color: $navbar-last-link-hover-bg;
+      }
+    }
+
+    &.last,
+    &:last-child {
       a {
         font-weight: bold;
         display: inline-block;
         background-color: $navbar-last-link-bg;
         color: $navbar-link-color;
         border-radius: 5px;
-        font-weight: bold;
-        text-decoration: none;
 
         &:hover {
+          background-color: $navbar-link-hover-bg;
+          color: $navbar-link-hover-color;
+        }
+      }
+
+      .dropdown-menu > li > a:hover {
+        background-color: $navbar-link-hover-bg;
+        color: $navbar-link-hover-color;
+        border-radius: 5px;
+      }
+    }
+  }
+  .expanded {
+    ul.dropdown-menu {
+      li.last {
+        a:hover {
           background-color: $navbar-last-link-hover-bg;
+          color: $navbar-link-hover-color;
+          border-radius: 5px;
         }
       }
     }
+  }
+}
+
+
+nav#block-endossmp-theme-main-menu .dropdown-menu {
+  background: black;
+  border: black;
+
+  li.last a {
+    display: inline-block;
+    background-color: black;
+    color: $navbar-link-color;
+    border-radius: 0;
+    text-decoration: none;
+  }
+}
+
+.dropdown-menu {
+  > .active > a,
+  > .active > a:hover,
+  > .active > a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: black;
+    outline: 0;
   }
 }
 
@@ -191,12 +227,7 @@ body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar-fixed-top {
   display: none;
 }
 
-
 @media (max-width: 767px) {
-  .navbar-collapse {
-    //position: relative;
-  }
-
   .navbar-btn {
     padding-left: 45px;
   }
@@ -217,25 +248,35 @@ body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar-fixed-top {
     text-decoration: none;
     text-align: center;
     border: 1px solid white;
-  }
 
-  .navbar-btn.join-now {
     a {
       color: #fff;
     }
+
     a:hover {
       text-decoration: none;
     }
-  }
-  .navbar-btn.join-now:hover {
-    background-color: #0056b3;
+
+    &:hover {
+      background-color: #0056b3;
+    }
   }
 
   .navbar-toggle {
     float: left;
-    display:block;
+    display: block;
     margin-right: 70px;
   }
 }
 
+/* Option to open dropdown child on hover */
+.navbar-nav .dropdown:hover .dropdown-menu {}
+  
 
+.navbar-nav .dropdown .dropdown-menu a:hover {
+  background-color: $navbar-link-hover-bg;
+  color: $navbar-link-hover-color;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
