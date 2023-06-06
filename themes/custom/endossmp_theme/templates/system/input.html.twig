@@ -1,0 +1,56 @@
+{#
+/**
+ * @file
+ * Default theme implementation for an 'input' #type form element.
+ *
+ * Available variables:
+ * - attributes: A list of HTML attributes for the input element.
+ * - children: Optional additional rendered elements.
+ * - icon: An icon.
+ * - input_group: Flag to display as an input group.
+ * - icon_position: Where an icon should be displayed.
+ * - prefix: Markup to display before the input element.
+ * - suffix: Markup to display after the input element.
+ * - type: The type of input.
+ *
+ * @ingroup templates
+ *
+ * @see \Drupal\bootstrap\Plugin\Preprocess\Input
+ * @see template_preprocess_input()
+ */
+#}
+{% if input_group or prefix or suffix or block('input') is defined %}
+	<div class="input-wrapper container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="input-content">
+					{% apply spaceless %}
+						{% if input_group %}
+							<div class="input-group">
+						{% endif %}
+
+						{% if prefix %}
+							{{ prefix }}
+						{% endif %}
+
+						{% block input %}
+							<input{{ attributes }}/>
+						{% endblock %}
+
+						{% if suffix %}
+							{{ suffix }}
+						{% endif %}
+
+						{% if input_group %}
+							</div>
+						{% endif %}
+
+						{% if children is defined %}
+							{{ children }}
+						{% endif %}
+					{% endapply %}
+				</div>
+			</div>
+		</div>
+	</div>
+{% endif %}

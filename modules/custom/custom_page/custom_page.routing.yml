@@ -1,0 +1,7 @@
+custom_page.checkout:
+  path: '/membership/checkout'
+  defaults:
+    _controller: '\Drupal\custom_page\Controller\CheckoutController::content'
+    _title: 'Membership Checkout'
+  requirements:
+    _permission: 'access content'

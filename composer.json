@@ -18,8 +18,12 @@
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.0",
         "drupal/advagg": "^6.0@alpha",
+        "drupal/advancedqueue": "^1.0@beta",
         "drupal/bootstrap": "^3.28",
         "drupal/captcha": "^2.0@beta",
+        "drupal/commerce": "^2.36",
+        "drupal/commerce_paypal": "^1.4",
+        "drupal/commerce_recurring": "^1.0@RC",
         "drupal/consumer_image_styles": "^4.0",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
@@ -29,6 +33,7 @@
         "drupal/eck": "^2.0",
         "drupal/entity_reference_revisions": "^1.10",
         "drupal/graphql": "^4.0",
+        "drupal/inline_entity_form": "^1.0@RC",
         "drupal/metatag": "^1.23",
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
@@ -42,9 +47,7 @@
         "drupal/webform": "^6.2@beta",
         "drupal/xmlsitemap": "^1.4",
         "drush/drush": "^11.5",
-        "webonyx/graphql-php": "^14.0",
-        "drupal/inline_entity_form": "^1.0@RC",
-        "drupal/commerce": "^2.36"
+        "webonyx/graphql-php": "^14.0"
     },
     "conflict": {
         "drupal/drupal": "*"
