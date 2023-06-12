@@ -1,0 +1,94 @@
+// Add custom styles for the form
+.webform-submission-form {
+    padding: 10px 70px 50px;
+    border: 2px solid #8a6d3b;
+    background: #080808;
+    border-radius: 20px;
+    margin-bottom: 40px;
+
+    .fieldset-wrapper {
+        max-width: 100%; // Constrain the width to 100% of the container
+      }
+  
+    // Style form elements
+    .form-item {
+      color: #fff;
+      border-color: transparent;
+      background-color: #080808;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .panel-heading {
+        background-color: transparent;
+        .panel-title {
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    legend {
+        border-bottom: none;
+    }
+
+    .webform-submission-form .form-type-checkbox {
+        margin-top: 0px;
+    }
+    .fieldset-legend {
+        color: white;
+    }
+    .js-webform-checkboxes {
+
+    }
+
+    .form-type-checkbox {
+        margin-top: 5px;
+    }
+  
+    // Style labels
+    label {
+      color: #fff;
+    }
+  
+    // Style input fields
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="checkbox"] {
+      background-color: #2d2d2d;
+      border: transparent;
+      color: #fff;
+      height:60px;
+  
+      &:focus {
+        border-color: #8a6d3b;
+        box-shadow: none;
+      }
+    }
+  
+    // Style submit button
+    .webform-button--submit {
+      background-color: #8a6d3b;
+      border-color: #8a6d3b;
+  
+      &:hover,
+      &:focus {
+        background-color: #6f5630;
+        border-color: #6f5630;
+      }
+    }
+
+    .container-inline div, .container-inline label {
+        display: block; 
+        margin-top: 3px;
+        margin-left: -10px;
+    } 
+
+  }
+
+  .webform-submission-form {
+    .form-item {
+      max-width: 100%; // Constrain the width to 100% of the container
+    }
+  }
+

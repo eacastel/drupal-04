@@ -814,4 +814,78 @@ body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar-fixed-top {
   text-decoration: none;
 }
 
+.webform-submission-form {
+  padding: 10px 70px 50px;
+  border: 2px solid #8a6d3b;
+  background: #080808;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.webform-submission-form .fieldset-wrapper {
+  max-width: 100%;
+}
+.webform-submission-form .form-item {
+  color: #fff;
+  border-color: transparent;
+  background-color: #080808;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.webform-submission-form .panel-heading {
+  background-color: transparent;
+}
+.webform-submission-form .panel-heading .panel-title {
+  color: #fff;
+  font-weight: bold;
+}
+.webform-submission-form legend {
+  border-bottom: none;
+}
+.webform-submission-form .webform-submission-form .form-type-checkbox {
+  margin-top: 0px;
+}
+.webform-submission-form .fieldset-legend {
+  color: white;
+}
+.webform-submission-form .form-type-checkbox {
+  margin-top: 5px;
+}
+.webform-submission-form label {
+  color: #fff;
+}
+.webform-submission-form input[type=text],
+.webform-submission-form input[type=email],
+.webform-submission-form input[type=tel],
+.webform-submission-form input[type=checkbox] {
+  background-color: #2d2d2d;
+  border: transparent;
+  color: #fff;
+  height: 60px;
+}
+.webform-submission-form input[type=text]:focus,
+.webform-submission-form input[type=email]:focus,
+.webform-submission-form input[type=tel]:focus,
+.webform-submission-form input[type=checkbox]:focus {
+  border-color: #8a6d3b;
+  box-shadow: none;
+}
+.webform-submission-form .webform-button--submit {
+  background-color: #8a6d3b;
+  border-color: #8a6d3b;
+}
+.webform-submission-form .webform-button--submit:hover, .webform-submission-form .webform-button--submit:focus {
+  background-color: #6f5630;
+  border-color: #6f5630;
+}
+.webform-submission-form .container-inline div, .webform-submission-form .container-inline label {
+  display: block;
+  margin-top: 3px;
+  margin-left: -10px;
+}
+
+.webform-submission-form .form-item {
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,4 @@
+name: Add to cart
+description: Redirects add to cart button to cart to expedite checkout process.
+core_version_requirement: ^8 || ^9 || ^10
+type: module

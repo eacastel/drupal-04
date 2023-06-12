@@ -1,0 +1,12 @@
+<?php
+
+use Drupal\Core\Render\BubbleableMetadata;
+
+/**
+ * Implements hook_page_attachments().
+ */
+function your_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+    if ($form_id == 'commerce_order_item_add_to_cart_form_commerce_product_default') {
+      $form['#attached']['library'][] = 'endossmp_theme/add_to_cart';
+    }
+  }

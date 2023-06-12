@@ -2,3 +2,5 @@ name: Custom Page
 description: Provides a custom page for the membership checkout process.
 core_version_requirement: ^8 || ^9 || ^10
 type: module
+libraries:
+  - endossmp_theme/form_submit
