@@ -241,6 +241,12 @@ h6 {
     margin-bottom: 0.9em;
   }
 }
+a {
+  color: #6db9fb;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 h2.byline {
   margin-top: -16px;
 }
@@ -878,14 +884,116 @@ body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar-fixed-top {
   background-color: #6f5630;
   border-color: #6f5630;
 }
+.webform-submission-form div.panel-body {
+  display: block;
+}
 .webform-submission-form .container-inline div, .webform-submission-form .container-inline label {
   display: block;
-  margin-top: 3px;
-  margin-left: -10px;
+}
+.webform-submission-form .checkboxes--wrapper {
+  display: block;
 }
 
 .webform-submission-form .form-item {
   max-width: 100%;
+}
+
+.container-inline div {
+  display: block;
+}
+
+.node-9 h6 {
+  padding: 20px 0px;
+  font-weight: bold;
+}
+.node-9 .join-us-first-p {
+  padding-bottom: 40px;
+}
+.node-9 .faq-endos .join-now {
+  padding: 40px;
+  border: 2px solid #8a6d3b;
+  background: #080808;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.node-9 .join-now-button {
+  margin: 0px;
+  width: 133px;
+  font-weight: bold;
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px 12px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+.node-9 .join-now-button a {
+  color: #fff;
+}
+.node-9 .join-now-button a:hover {
+  text-decoration: none;
+}
+.node-9 .join-now-button:hover {
+  background-color: #0056b3;
+}
+.node-9 .icon-join-now {
+  padding-bottom: 30px;
+  max-width: 70%;
+}
+
+.footer .region-footer nav {
+  display: flex;
+  justify-content: center;
+}
+.footer .region-footer nav a {
+  font-weight: normal;
+}
+.footer .region-footer nav .nav > li > a:hover, .footer .region-footer nav .nav > li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.footer .region-footer ul.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .region-footer ul.menu li {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 991px) {
+  .footer .region-footer ul.menu {
+    flex: 1 0 100%;
+    max-width: 100%;
+    justify-content: left;
+  }
+}
+.discord-endossmp-link {
+  position: relative;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.discord-endossmp-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
+
+.discord-endossmp-link img.discord-img {
+  padding: 30px;
+  max-width: 180px;
 }
 
 /*# sourceMappingURL=main.css.map */

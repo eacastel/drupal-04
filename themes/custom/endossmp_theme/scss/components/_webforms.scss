@@ -78,11 +78,17 @@
       }
     }
 
+    div.panel-body {
+      display: block;
+    }
+
     .container-inline div, .container-inline label {
         display: block; 
-        margin-top: 3px;
-        margin-left: -10px;
     } 
+
+    .checkboxes--wrapper {
+      display: block;
+    }
 
   }
 
@@ -92,3 +98,8 @@
     }
   }
 
+  .container-inline div {
+    display: block;
+  }
+
+  

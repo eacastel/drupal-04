@@ -1,0 +1,52 @@
+.node-9 {
+
+    h6 {
+        padding: 20px 0px;
+        font-weight: bold;
+    }
+
+    .join-us-first-p {
+        padding-bottom: 40px;
+    }
+
+    .faq-endos .join-now {
+        padding: 40px;
+        border: 2px solid #8a6d3b;
+        background: #080808;
+        border-radius: 20px;
+        margin-bottom: 40px;
+    }
+
+    .join-now-button {
+        margin: 0px;
+        width: 133px;
+        font-weight: bold;
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 8px 12px;
+        text-decoration: none;
+        text-align: center;
+        border: 1px solid white;
+        text-transform: uppercase;
+
+        a {
+            color: #fff;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+
+    .icon-join-now {
+        padding-bottom: 30px;
+        max-width: 70%;
+    }
+}
