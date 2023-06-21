@@ -131,13 +131,6 @@ nav#block-endossmp-theme-main-menu .dropdown-menu  {
       color: $navbar-link-color;
       border-radius: 0;
       text-decoration: none;
-
-      &:hover {
-        background-color:black;
-      }
-      &:active {
-        background-color: black;
-      }
   }
 }
 
@@ -147,6 +140,8 @@ nav#block-endossmp-theme-main-menu .dropdown-menu  {
   background-color: black;
   outline: 0;
 }
+
+
 
 .navbar-btn {
   margin: 0;

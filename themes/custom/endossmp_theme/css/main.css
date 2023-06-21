@@ -276,35 +276,38 @@ h2.byline {
 }
 
 .node-8 .field--name-body p,
-.node-8 .field--name-body li {
+.node-8 .field--name-body li, .node-30 .field--name-body p,
+.node-30 .field--name-body li {
   font-size: 16px;
   line-height: 1.5;
 }
 @media (min-width: 768px) {
   .node-8 .field--name-body p,
-  .node-8 .field--name-body li {
+  .node-8 .field--name-body li, .node-30 .field--name-body p,
+  .node-30 .field--name-body li {
     font-size: 18px;
     line-height: 1.6;
   }
 }
 @media (min-width: 992px) {
   .node-8 .field--name-body p,
-  .node-8 .field--name-body li {
+  .node-8 .field--name-body li, .node-30 .field--name-body p,
+  .node-30 .field--name-body li {
     font-size: 18px;
     line-height: 1.6;
   }
 }
-.node-8 .field--name-body ul {
+.node-8 .field--name-body ul, .node-30 .field--name-body ul {
   list-style-type: circle;
   margin-left: 30px;
   margin-top: 20px;
 }
-.node-8 .field--name-body ol {
+.node-8 .field--name-body ol, .node-30 .field--name-body ol {
   list-style-type: decimal;
   margin-left: 30px;
   margin-top: 20px;
 }
-.node-8 .field--name-body li {
+.node-8 .field--name-body li, .node-30 .field--name-body li {
   margin-left: 5px;
   padding-bottom: 20px;
   padding-left: 5px;
