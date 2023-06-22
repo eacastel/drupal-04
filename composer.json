@@ -33,6 +33,7 @@
         "drupal/eck": "^2.0",
         "drupal/entity_reference_revisions": "^1.10",
         "drupal/graphql": "^4.0",
+        "drupal/health_check": "^3.0",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/metatag": "^1.23",
         "drupal/paragraphs": "^1.15",
