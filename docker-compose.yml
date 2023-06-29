@@ -6,10 +6,11 @@ services:
       - ./db_data_04:/var/lib/mysql
     restart: always
     environment:
-      MYSQL_DATABASE: ${DB_NAME}
-      MYSQL_USER: ${DB_USER}
-      MYSQL_PASSWORD: ${DB_PASSWORD}
-      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DRUPAL_DATABASE}
+      MYSQL_USER: ${DRUPAL_DB_USER}
+      MYSQL_PASSWORD: ${DRUPAL_DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DRUPAL_DB_ROOT_PASSWORD}
+      DB_HOST: ${DB_HOST}
   drupal:
     depends_on:
       - db
@@ -28,6 +29,7 @@ services:
       - ./libraries:/opt/drupal/web/libraries
       - ./sites/default/files:/opt/drupal/web/sites/default/files
     environment:
-      DRUPAL_DATABASE: ${DB_NAME}
-      DRUPAL_DB_USER: ${DB_USER}
-      DRUPAL_DB_PASSWORD: ${DB_PASSWORD}
+      DRUPAL_DATABASE: ${DRUPAL_DATABASE}
+      DRUPAL_DB_USER: ${DRUPAL_DB_USER}
+      DRUPAL_DB_PASSWORD: ${DRUPAL_DB_PASSWORD}
+      DB_HOST: ${DB_HOST}

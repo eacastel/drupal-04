@@ -813,12 +813,13 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-$databases['default']['default'] = array (
-  'database' => 'dg_db04',
-  'username' => 'dg_user04',
-  'password' => '8dffa54qod0%423',
+
+$databases['default']['default'] = array(
+  'database' => getenv('DRUPAL_DATABASE'),
+  'username' => getenv('DRUPAL_DB_USER'),
+  'password' => getenv('DRUPAL_DB_PASSWORD'),
   'prefix' => '',
-  'host' => 'db',
+  'host' => getenv('DB_HOST'),
   'port' => '3306',
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'driver' => 'mysql',
