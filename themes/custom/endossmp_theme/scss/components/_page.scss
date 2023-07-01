@@ -18,12 +18,18 @@
 
 .faq-endos {
   padding: 40px;
-  border: 2px solid #8a6d3b;
+  border: 4px solid #8a6d3b;
   background: #080808;
   border-radius: 20px;
   margin-bottom: 40px;
 }
-
+.faq-endos-username {
+  padding: 40px;
+  border: 5px dashed #8a6d3b;
+  background: #080808;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
   .icon-endos {
     display: flex;
     align-items: center;

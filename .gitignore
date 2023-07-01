@@ -1,3 +1,4 @@
 .env
 .env.dev
 db_data_04/
+*.sql

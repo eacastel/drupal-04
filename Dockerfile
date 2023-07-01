@@ -20,6 +20,12 @@ RUN docker-php-ext-install pdo_mysql zip gd intl bcmath
 
 # Copy composer.json to install required Drupal packages and dependencies
 COPY ./composer.json composer.lock /opt/drupal/
+COPY ./modules /opt/drupal/web/modules
+COPY ./profiles /opt/drupal/web/profiles
+COPY ./themes /opt/drupal/web/themes
+COPY ./sites /opt/drupal/web/sites
+COPY ./libraries /opt/drupal/web/libraries
+COPY ./sites/default/files /opt/drupal/web/sites/default/files
 
 # Install Drupal dependencies
 RUN composer install --no-dev --optimize-autoloader --no-interaction --working-dir=/opt/drupal

@@ -314,6 +314,21 @@ h2.byline {
   line-height: 1.5em;
 }
 
+.node-31 .field--name-body ol {
+  list-style-type: decimal;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.node-31 .field--name-body li {
+  margin-left: 5px;
+  padding-bottom: 50px;
+  padding-left: 5px;
+  line-height: 1.5em;
+}
+.node-31 .field--name-body li::marker {
+  font-size: 1.925em;
+}
+
 .field--name-field-page-image {
   display: flex;
   justify-content: center;
@@ -328,7 +343,15 @@ h2.byline {
 /* Faq Endos */
 .faq-endos {
   padding: 40px;
-  border: 2px solid #8a6d3b;
+  border: 4px solid #8a6d3b;
+  background: #080808;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.faq-endos-username {
+  padding: 40px;
+  border: 5px dashed #8a6d3b;
   background: #080808;
   border-radius: 20px;
   margin-bottom: 40px;
