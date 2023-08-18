@@ -1,0 +1,4 @@
+name: Webform Addons
+description: Adds HTML to webform radio buttons for membership levels.
+core_version_requirement: ^8 || ^9 || ^10
+type: module

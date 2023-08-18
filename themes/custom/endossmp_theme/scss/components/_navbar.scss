@@ -26,7 +26,7 @@ $navbar-mobile-overlay: rgba(0, 0, 0, 0.8);
 }
 
 .navbar .logo {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .navbar-nav {
@@ -214,8 +214,10 @@ nav#block-endossmp-theme-main-menu .dropdown-menu {
 }
 
 body.navbar-is-fixed-top {
-  margin-top: 80px;
+  margin-top: 0px;
 }
+
+
 
 body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar-fixed-top {
   top: 80px;
@@ -280,3 +282,23 @@ body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar-fixed-top {
   font-weight: bold;
   text-decoration: none;
 }
+
+/* DROPDOWN WRAP */
+
+nav#block-endossmp-theme-main-menu ul.menu > li.expanded {
+  position: relative; // Ensures the dropdown is positioned with respect to this parent
+}
+
+.expanded ul.dropdown-menu {
+  left: 0;          // Align to the left of parent
+  right: auto;      // Reset any potential 'right' value that may be stretching the dropdown
+  width: 250px;     // Default width for dropdown
+  min-width: 200px; // Set a minimum width
+  
+  li a {
+    white-space: normal;  // Allow wrapping inside each link if it exceeds the width
+    overflow-wrap: break-word; // Force wrapping for long words or URLs
+    margin-bottom:10px;
+  }
+}
+

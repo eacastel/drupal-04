@@ -35,6 +35,20 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class SlickFilter extends BlazyFilterBase {
 
   /**
+   * The slick admin service.
+   *
+   * @var \Drupal\slick\Form\SlickAdminInterface
+  */
+  protected $admin;
+
+  /**
+   * The slick manager service.
+   *
+   * @var \Drupal\slick\SlickManagerInterface
+   */
+  protected $manager;
+
+  /**
    * {@inheritdoc}
    */
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {

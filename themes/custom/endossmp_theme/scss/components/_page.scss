@@ -8,6 +8,10 @@
     }
 }
 
+.field--name-field-media-image, .field--name-field-image {
+  padding-bottom:20px;
+}
+
 .endos-image {
   min-width: 100px; /* Change as needed */
   height: auto;
@@ -29,6 +33,7 @@
   background: #080808;
   border-radius: 20px;
   margin-bottom: 40px;
+  max-width: 942px;
 }
   .icon-endos {
     display: flex;
@@ -57,4 +62,137 @@
     font-size: 80%;
     padding-top: 20px;
   }
+  .article-information-footer {
+    display: none;
+  }
+
+  /* Display for tags */
+
+  /* Make the field container flex to align items horizontally */
+.field--name-field-tags .field--items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style the individual tag items */
+.field--name-field-tags {
+  padding-top:40px;
+}
+.field--name-field-tags .field--label, .field--name-field-page-byline {
+  display: none;
+}
+.field--name-field-tags .field--item {
+  /* Removing any default margin or padding */
+  margin: 0;
+  padding: 5px 10px;
   
+  /* Add space between each item */
+  margin: 0 10px 0 0;
+  
+  /* Add the pipe separator except for the last item */
+  position: relative;
+}
+
+.field--name-field-tags .field--item:not(:last-child)::after {
+  content: "|"; 
+  position: absolute;
+  right: -7px;  /* Adjust the position of the pipe if needed */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8b8a8a;  /* Color of the pipe, change if needed */
+}
+
+/* Style the links */
+.field--name-field-tags .field--item a {
+  text-decoration: none;  /* Removing underline from the link */
+  color: #8b8a8a;            /* Color of the link, change if needed */
+  font-weight: normal;    /* Ensuring the link is not bold */
+}
+
+/* Separate text from image on the field body */
+.article .field--name-body {
+  padding-top:40px;
+}
+
+/* Page Titles */
+h1.title.page-title {
+  text-transform: uppercase;
+  font-weight: 200;
+  padding: 40px 0;
+  line-height: 1.3em;
+}
+
+h2.byline {
+  margin-top: -65px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+/* Breadcrums --need to be enabled by block */
+
+.breadcrumb {
+  width:100%;
+  padding: 0 15px;
+  margin-bottom: 0px;
+  background-color: transparent;
+  border-radius: 0;
+  color: #f5f5f5;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0; 
+  z-index: 1000;
+  font-size: 80%;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+    color:#f5f5f5;
+    font-weight: normal;
+  }
+}
+
+/* why join buttons */
+
+.why-join-buttons {
+  /* This makes sure any floated children are contained */
+  overflow: hidden;
+ 
+}
+
+.why-join-btn {
+	text-align: center;
+	display: inline-block;
+	padding: 10px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	background-color: #1d8371;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+	position: relative;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	font-size: 16px;
+ 
+ &:hover {
+     background-color: #20927e;
+     color:#fff;
+     text-decoration: none;
+ }
+}
+
+.kids-btn:hover {
+ background-color: #25ad95;
+}
+
+.parents-btn:hover {
+ background-color: #25ad95;
+}
+
+.after-why-join-buttons {
+ clear: both;
+}
+

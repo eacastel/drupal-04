@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-<url><loc>http://default/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://endossmp.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://endossmp.com/about-endos-smp</loc><lastmod>2023-08-18T08:16Z</lastmod><changefreq>daily</changefreq></url>
+<url><loc>https://endossmp.com/membership/why-join/for-kids</loc><lastmod>2023-08-09T20:19Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://endossmp.com/membership/why-join/for-parents</loc><lastmod>2023-08-09T20:21Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://endossmp.com/endos-smp-membership-levels</loc><lastmod>2023-06-08T14:43Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>https://endossmp.com/resources/faq</loc><lastmod>2023-08-17T15:47Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://endossmp.com/resources/online-safety/minecraft-for-kids</loc><lastmod>2023-08-17T10:30Z</lastmod><changefreq>weekly</changefreq><priority>0.3</priority></url>
+<url><loc>https://endossmp.com/resources/getting-started</loc><lastmod>2023-08-17T11:42Z</lastmod><changefreq>weekly</changefreq><priority>0.3</priority></url>
+<url><loc>https://endossmp.com/resources/getting-started-minecraft-java-edition</loc><lastmod>2023-08-17T11:45Z</lastmod><changefreq>weekly</changefreq><priority>0.3</priority></url>
+<url><loc>https://endossmp.com/resources</loc><lastmod>2023-08-17T08:51Z</lastmod><changefreq>weekly</changefreq><priority>0.3</priority></url>
+<url><loc>https://endossmp.com/privacy-policy</loc><lastmod>2023-08-17T16:03Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://endossmp.com/membership/why-join</loc><lastmod>2023-08-15T19:22Z</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://endossmp.com/join-now</loc><lastmod>2023-08-18T10:52Z</lastmod><changefreq>daily</changefreq><priority>0.6</priority></url>
 </urlset>

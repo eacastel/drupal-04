@@ -40,6 +40,11 @@ class MigrateCaptchaPointsTest extends MigrateDrupal7TestBase {
   /**
    * {@inheritdoc}
    */
+  protected $captchaStorage;
+
+  /**
+   * {@inheritdoc}
+   */
   protected function setUp(): void {
     parent::setUp();
     $this->loadFixture(implode(DIRECTORY_SEPARATOR, [

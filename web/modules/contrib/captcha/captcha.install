@@ -211,5 +211,59 @@ function captcha_update_8904(&$sandbox) {
     ->clear('allow_on_admin_pages')
     ->clear('enabled_default')
     ->save();
+}
 
+/**
+ * Add the captcha title, if the user has not set it manually yet.
+ *
+ * Note, that this is needed, because the update hook introducing the title
+ * was originally implemented in the wrong install file (image_captcha.install).
+ * See https://www.drupal.org/project/captcha/issues/3356063 where it was
+ * wrongly added.
+ */
+function captcha_update_8905() {
+  $captchaConfig = \Drupal::configFactory()->getEditable('captcha.settings');
+  if ($captchaConfig->get('title') === NULL) {
+    // Set the title in config, if it wasn't existing before:
+    $captchaConfig->set('title', 'CAPTCHA')->save(TRUE);
+  }  
+}
+
+/**
+ * Ensure caches are cleared with new module folder locations.
+ */
+function captcha_update_8906() {
+  // Remove test modules if they're on the site. They won't rebuild.
+  $extension = \Drupal::configFactory()->getEditable('core.extension');
+  $modules = $extension->get('module');
+  unset($modules['captcha_long_form_id_test']);
+  unset($modules['captcha_test']);
+  $extension->set('module', $modules);
+  $extension->save();
+
+  // Need to flush all caches due to module paths changing.
+  drupal_flush_all_caches();
+}
+
+/**
+ * Fix invalid config added in captcha_update_8906 (2.0.1)
+ */
+function captcha_update_8907() {
+  // Remove test modules if they're on the site. They won't rebuild.
+  $extension = \Drupal::configFactory()->getEditable('core.extension');
+  
+  // Remove invalid config added in 8906 and do the actual removal.
+  if ($extension->get('modules') !== NULL) {
+    $extension->clear('modules');
+
+    $modules = $extension->get('module');
+    unset($modules['captcha_long_form_id_test']);
+    unset($modules['captcha_test']);
+    $extension->set('module', $modules);
+
+    $extension->save();
+
+    // Need to flush all caches due to module paths changing.
+    drupal_flush_all_caches();
+  }
 }

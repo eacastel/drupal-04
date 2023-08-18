@@ -90,3 +90,37 @@ h2.field--name-field-join-us-title, h2.field--name-field-feature-title, h2.field
     border-radius: 20px;
     padding-bottom: 40px;
   }
+
+/* join now button */
+
+.field--name-field-join-us-text {
+    text-align: center;
+
+    .join-now-button {
+        margin: 20px 0 0;
+        width: 133px;
+        font-weight: bold;
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 8px 12px;
+        text-decoration: none;
+        text-align: center;
+        border: 1px solid white;
+        text-transform: uppercase;
+
+        a {
+            color: #fff;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+}

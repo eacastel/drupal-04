@@ -150,8 +150,16 @@
     }
   }
 
-  .slide--caption--bottom .slide__constrained > .slide__caption {
+.slide--caption--bottom .slide__constrained > .slide__caption {
     background: radial-gradient(black, transparent);
     background-color: rgba(0, 0, 0, 0);
 }
-  
+
+/* Adjust for mobile image size */
+@media (max-width: 767px) {
+  .slide__media .media--blazy, 
+  .media.media--ratio {
+    height: 250px !important;
+  }
+}
+

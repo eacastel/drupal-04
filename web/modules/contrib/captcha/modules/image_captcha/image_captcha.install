@@ -82,7 +82,14 @@ function image_captcha_update_9001(&$sandbox) {
  * Set captcha 'title' default, as the setting did not exist before.
  */
 function image_captcha_update_9002(&$sandbox) {
-  // Reset the font path from the correct module directory location:
   $config = \Drupal::configFactory()->getEditable('image_captcha.settings');
   $config->set('title', 'CAPTCHA')->save(TRUE);
+}
+
+/**
+ * Remove image_captcha "title" config as it never should have existed.
+ */
+function image_captcha_update_9003(&$sandbox) {
+  $imageCaptchaConfig = \Drupal::configFactory()->getEditable('image_captcha.settings');
+  $imageCaptchaConfig->clear('title')->save(TRUE);
 }

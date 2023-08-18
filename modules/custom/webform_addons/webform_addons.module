@@ -1,0 +1,61 @@
+<?php
+
+use Drupal\webform\Entity\Webform;
+use Drupal\Core\Form\FormStateInterface;
+
+function webform_addons_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+    drupal_set_message($form_id);
+
+    if ($form_id == 'webform_submission_endos_smp_signup_form_add_form') {
+
+        if (function_exists('kint')) {
+            kint($form);
+        }
+
+        foreach ($form['membership_level']['membership_level_select']['#options'] as $key => &$option) {
+            switch ($key) {
+                case 'Bedrock':
+                $option = $option . '
+                <div class="row">
+                    <div class="col-md-5 text-center">
+                    <div class="faq-endos join-now">
+                        <p>
+                        <img class="icon-join-now" src="/sites/default/files/2023-06/bedrock.png">
+                        </p>
+                        <h2>BEDROCK</h2>
+                        <p>
+                        Our basic membership...
+                        <!-- rest of the text -->
+                        </p>
+                        <h6>$10.99 p/month*</h6>
+                    </div>
+                    </div>
+                </div>';
+                break;
+                
+                case 'Diamond':
+                $option = $option . '
+                <div class="row">
+                    <div class="col-md-5 text-center">
+                    <div class="faq-endos join-now">
+                        <p>
+                        <img class="icon-join-now" src="/sites/default/files/2023-06/diamond-ore.png">
+                        </p>
+                        <h2>DIAMOND</h2>
+                        <p>
+                        Our VIP membership...
+                        <!-- rest of the text -->
+                        </p>
+                        <h6>$12.99 p/month*</h6>
+                    </div>
+                    </div>
+                </div>';
+                break;
+
+                default:
+                break;
+            }
+        }
+    }
+}

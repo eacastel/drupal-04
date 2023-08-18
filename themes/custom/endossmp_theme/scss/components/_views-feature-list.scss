@@ -1,0 +1,112 @@
+.view-features-list {
+    h4 {
+        font-weight: 300;
+        margin-bottom:10px;
+    }
+    .views-row {
+        //border-top: 1px gray solid;
+        border-bottom: 1px gray solid;
+        margin: 0 20px;
+        padding: 40px 0 10px;
+      }
+      .views-field {
+        .resources-summary-body {
+            margin-bottom: 20px;
+        }
+      }
+    }
+
+/* Read more buttons */
+.read-more-button a {
+    background-color: #1d8371;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;  /* Add this for the movement effect */
+  }
+  
+  .read-more-button a:hover {
+    background-color: #25ad95;
+  }
+  
+  .read-more-button a:active {
+    /* This gives the movement effect on click */
+    top: 1px;
+    left: 1px;
+  }
+
+/* For Views Feature Taxonomy link below the Image */
+
+/* Taxonomy Category */
+
+.field--name-field-category {
+    .field--label  {
+    font-weight: normal;
+    float:none;
+    }
+    .field--items {
+
+        .field--item {
+          a {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+.field--name-field-category {
+    text-align: right; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; 
+}
+
+.field--name-field-category .field--item {
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    position: relative;
+}
+
+.field--name-field-category .field--item:not(:last-child)::after {
+    content: "|"; 
+    position: absolute;
+    right: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.field--name-field-category {
+    margin-bottom: 20px;  
+}
+
+/* Tags */
+
+.resources-list-tags {
+    padding-top:20px;
+    float:right;
+    text-align: right;
+    color:gray;
+
+    a {
+        color:gray;
+        font-weight: 300;
+        font-size: 90%;
+        text-decoration: none;
+        padding-right: 4px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.views-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
