@@ -18,6 +18,10 @@ RUN apt-get update && apt-get install -y \
 # Enable the necessary PHP extensions
 RUN docker-php-ext-install pdo_mysql zip gd intl bcmath
 
+# Increase PHP memory limit
+RUN echo "memory_limit=512M" > /usr/local/etc/php/conf.d/memory-limit.ini
+
+
 # Copy composer.json to install required Drupal packages and dependencies
 COPY ./composer.json composer.lock /opt/drupal/
 COPY ./modules /opt/drupal/web/modules

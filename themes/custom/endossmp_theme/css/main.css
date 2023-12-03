@@ -653,20 +653,6 @@ section#block-views-block-endos-sliders-block-1 {
   }
 }
 /*-- Homepage Paragraphs --*/
-h1.title.page-title {
-  text-transform: uppercase;
-  font-weight: 200;
-  padding: 40px 0;
-  line-height: 1.3em;
-}
-
-h2.byline {
-  margin-top: -65px;
-  padding-bottom: 20px;
-  font-weight: 300;
-  font-size: 24px;
-}
-
 h2.field--name-field-join-us-title, h2.field--name-field-feature-title, h2.field--name-field-testimonial-title, h2.field--name-field-about-us-title {
   padding: 40px 0 0px;
   text-align: center;
@@ -1327,6 +1313,12 @@ input.form-radio:focus {
   max-width: 180px;
 }
 
+/* Footer Copyright */
+#block-endossmp-theme-footercopyright .field--name-body {
+  font-size: 80%;
+  text-align: center;
+}
+
 .container-fluid {
   padding-left: 0;
 }
@@ -1426,6 +1418,11 @@ input.form-radio:focus {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Taxonomy Terms Pages Views */
+.title-attribute-001 {
+  padding-top: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

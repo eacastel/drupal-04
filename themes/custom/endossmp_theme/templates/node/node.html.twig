@@ -81,9 +81,11 @@
 
 	{{ title_prefix }}
 	{% if label and not page %}
+	<div class="col-md-10 col-md-offset-1 title-attribute-001">
 		<h2{{title_attributes}}>
 			<a href="{{ url }}" rel="bookmark">{{ label }}</a>
 		</h2>
+		</div>
 	{% endif %}
 	{{ title_suffix }}
 

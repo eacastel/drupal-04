@@ -1,0 +1,14 @@
+name: Commerce Webform Order module test redirect
+description: Support module for Commerce Webform Order module testing.
+package: Testing
+
+core_version_requirement: ^9.4 || ^10
+type: module
+
+dependencies:
+  - commerce_webform_order:commerce_webform_order
+
+# Information added by Drupal.org packaging script on 2023-08-24
+version: '3.0.0-beta1'
+project: 'commerce_webform_order'
+datestamp: 1692867044
